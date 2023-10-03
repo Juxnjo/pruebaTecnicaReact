@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const MovieCard = ( { imageUrl, title } ) =>
+export const Card = ( { imageUrl, title } ) =>
 {
     return (
         <div>

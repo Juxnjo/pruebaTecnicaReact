@@ -1,8 +1,24 @@
+
 export const filterAndSortMovies = ( data ) =>
 {
     const filteredData = data.filter( ( entry ) =>
     {
         return entry.programType === 'movie' //&& entry.releaseYear >= 2010;
+    } );
+
+    const sortedData = filteredData.sort( ( a, b ) =>
+    {
+        return a.title.localeCompare( b.title );
+    } );
+
+    return sortedData;
+};
+
+export const filterAndSortSeries = ( data ) =>
+{
+    const filteredData = data.filter( ( entry ) =>
+    {
+        return entry.programType === 'series' //&& entry.releaseYear >= 2010;
     } );
 
     const sortedData = filteredData.sort( ( a, b ) =>
@@ -21,7 +37,7 @@ const imageExists = ( url ) =>
     return img.complete && img.height !== 0;
 };
 
-export const filterMoviesWithValidImages = ( movies ) =>
+export const filterWithValidImages = ( movies ) =>
 {
     return movies.filter( ( entry ) =>
     {
