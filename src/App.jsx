@@ -1,18 +1,16 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage"
 import { SeriesPage } from "./pages/SeriesPage";
 import { MoviesPage } from "./pages/MoviesPage";
-import axios from "axios";
+import { NavBar } from "./components/NavBar";
+
 
 
 export default function App() {
-
-  
-
   return (
     <>
       <BrowserRouter>
+      <NavBar/>
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/series" element={<SeriesPage/>}></Route>

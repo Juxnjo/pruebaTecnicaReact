@@ -1,7 +1,14 @@
+import { HeaderBar } from "../components/HeaderBar";
 
-
-export const SeriesPage = () => {
+export const SeriesPage = () =>
+{
   return (
-    <div>SeriesPage</div>
+    <>
+    <HeaderBar title="Popular Series"/>
+    <div>
+      SeriesPage
+    </div>
+      
+    </>
   )
 }
