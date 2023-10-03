@@ -3,6 +3,7 @@ import { HomePage } from "./pages/HomePage"
 import { SeriesPage } from "./pages/SeriesPage";
 import { MoviesPage } from "./pages/MoviesPage";
 import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
 
 
 
@@ -17,6 +18,8 @@ export default function App() {
           <Route path="/movies" element={<MoviesPage/>}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer/>
+
     </>
   )
 }
