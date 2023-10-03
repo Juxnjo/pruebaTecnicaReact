@@ -1,7 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage"
+import { SeriesPage } from "./pages/SeriesPage";
+import { MoviesPage } from "./pages/MoviesPage";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/series" element={<SeriesPage/>}></Route>
+          <Route path="/movies" element={<MoviesPage/>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
