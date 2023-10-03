@@ -3,7 +3,7 @@ import data from "../data/sample.json";
 import { HeaderBar } from "../components/HeaderBar";
 import { Card } from "../components/Card";
 import { filterAndSortSeries, filterWithValidImages } from "../utils/entriesUtils";
-import { LoadContext } from "../context/LoadContext";
+import { LoadContext } from "../context/loadContext";
 
 export const SeriesPage = () =>
 {
