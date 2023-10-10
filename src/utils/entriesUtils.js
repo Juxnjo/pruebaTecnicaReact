@@ -30,7 +30,7 @@ export const filterAndSortSeries = ( data ) =>
 };
 
 
-const imageExists = ( url ) =>
+/* const imageExists = ( url ) =>
 {
     const img = new Image();
     img.src = url;
@@ -45,6 +45,6 @@ export const filterWithValidImages = ( movies ) =>
         return imageExists( imageUrl );
     } );
 };
-
+ */
 
 
