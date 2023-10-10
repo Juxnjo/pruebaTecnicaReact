@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import data from "../data/sample.json";
 import { HeaderBar } from "../components/HeaderBar";
 import { Card } from "../components/Card";
-import { filterAndSortSeries, filterWithValidImages } from "../utils/entriesUtils";
+import { filterAndSortSeries, /* filterWithValidImages */ } from "../utils/entriesUtils";
 import { LoadContext } from "../context/loadContext";
 
 export const SeriesPage = () =>
@@ -13,8 +13,8 @@ export const SeriesPage = () =>
   useEffect( () =>
   {
     const filteredAndSorted = filterAndSortSeries( data.entries )
-    const validImages = filterWithValidImages( filteredAndSorted )
-    setSeries( validImages )
+    /* const validImages = filterWithValidImages( filteredAndSorted ) */
+    setSeries( filteredAndSorted )
   }, [] )
 
   useEffect( () =>
